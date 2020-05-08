@@ -13,7 +13,7 @@ List *createList(int maxElementCount){
     pList = (List *)malloc(sizeof(List));
     if (pList == NULL) return NULL;
     pList->maxElementCount = maxElementCount;
-    pList->currentElementCount;
+    pList->currentElementCount = 0;
     pList->pElement = (ListNode *)malloc(sizeof(ListNode) * maxElementCount);
     if (pList->pElement == NULL) {
         free(pList);
